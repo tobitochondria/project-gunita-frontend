@@ -1,0 +1,38 @@
+.archive-card {
+  background-color: var(--pg-bg-card);
+  border: 1px solid var(--pg-border);
+  border-radius: 10px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  height: 100%;
+  transition: transform var(--pg-transition), box-shadow var(--pg-transition), border-color var(--pg-transition);
+}
+.archive-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 16px 32px var(--pg-card-hover-shadow);
+  border-color: var(--pg-accent);
+}
+
+.archive-card-icon {
+  font-size: 2.5rem;
+  color: var(--pg-accent);
+  margin-bottom: 1.25rem;
+  transition: transform var(--pg-transition);
+}
+.archive-card:hover .archive-card-icon {
+  transform: scale(1.15);
+}
+
+.archive-card-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--pg-text-heading);
+  margin-bottom: 0.75rem;
+}
+
+.archive-card-desc {
+  font-size: 0.9rem;
+  color: var(--pg-text-muted);
+  line-height: 1.6;
+  margin: 0;
+}

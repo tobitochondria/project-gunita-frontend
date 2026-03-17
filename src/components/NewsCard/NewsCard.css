@@ -1,0 +1,89 @@
+.news-card {
+  background-color: var(--pg-bg-card);
+  border: 1px solid var(--pg-border);
+  border-radius: 8px;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: transform var(--pg-transition), box-shadow var(--pg-transition), border-color var(--pg-transition);
+}
+.news-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px var(--pg-card-hover-shadow);
+  border-color: var(--pg-accent);
+}
+
+.news-card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  background: linear-gradient(135deg, var(--pg-bg-secondary), var(--pg-border));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--pg-text-muted);
+  font-size: 2.5rem;
+}
+
+.news-card-body {
+  padding: 1.25rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.news-card-source {
+  display: inline-block;
+  background-color: var(--pg-accent);
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 0.2rem 0.6rem;
+  border-radius: 3px;
+  margin-bottom: 0.75rem;
+  align-self: flex-start;
+}
+
+.news-card-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--pg-text-heading);
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.news-card-excerpt {
+  font-size: 0.875rem;
+  color: var(--pg-text-muted);
+  line-height: 1.5;
+  flex: 1;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.news-card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--pg-accent);
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: gap var(--pg-transition), color var(--pg-transition);
+  align-self: flex-start;
+}
+.news-card-link:hover {
+  gap: 0.75rem;
+  color: var(--pg-accent-hover);
+}

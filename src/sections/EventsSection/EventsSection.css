@@ -1,0 +1,19 @@
+.events-section {
+  background-color: var(--pg-bg);
+}
+
+.events-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 992px) {
+  .events-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 991.98px) {
+  .events-grid {
+    grid-template-columns: 1fr;
+  }
+}

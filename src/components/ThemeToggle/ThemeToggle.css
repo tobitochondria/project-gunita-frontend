@@ -1,0 +1,19 @@
+.theme-toggle {
+  background: transparent;
+  border: 1px solid var(--pg-border);
+  color: var(--pg-text);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all var(--pg-transition);
+  font-size: 1.1rem;
+}
+.theme-toggle:hover {
+  color: var(--pg-accent);
+  border-color: var(--pg-accent);
+  transform: rotate(20deg) scale(1.1);
+}
