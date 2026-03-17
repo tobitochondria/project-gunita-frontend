@@ -14,7 +14,7 @@ export function useTheme() {
 export function ThemeProvider({ children }) {
   const [theme, setTheme] = useState(() => {
     const saved = localStorage.getItem('pg-theme');
-    return saved || 'dark';
+    return saved || 'light';
   });
 
   useEffect(() => {
