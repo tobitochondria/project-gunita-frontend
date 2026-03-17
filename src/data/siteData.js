@@ -191,9 +191,9 @@ export const events = [
 export const socialLinks = [
   { platform: 'Facebook', url: 'https://www.facebook.com/projectgunita', icon: 'bi-facebook' },
   { platform: 'Messenger Channel', url: 'https://www.messenger.com/channel/projectgunita', icon: 'bi-messenger' },
-  { platform: 'Twitter / X', url: 'https://x.com/projectgunita', icon: 'bi-twitter-x' },
-  { platform: 'Instagram', url: 'https://www.instagram.com/projectgunita', icon: 'bi-instagram' },
-  { platform: 'TikTok', url: 'https://www.tiktok.com/@projectgunita', icon: 'bi-tiktok' },
+  { platform: 'Twitter / X', url: 'https://x.com/ProjectGunitaPH', icon: 'bi-twitter-x' },
+  { platform: 'Instagram', url: 'https://www.instagram.com/projectgunitaph/', icon: 'bi-instagram' },
+  { platform: 'TikTok', url: 'https://www.tiktok.com/@projectgunitaofficial', icon: 'bi-tiktok' },
   { platform: 'Bluesky', url: 'https://bsky.app/profile/projectgunita.com', icon: 'bi-bluesky' },
   { platform: 'Spotify', url: 'https://open.spotify.com/show/6Y1lRb72zWUSj7QciXsrUL', icon: 'bi-spotify' },
   { platform: 'YouTube', url: 'https://www.youtube.com/@projectgunita', icon: 'bi-youtube' },
