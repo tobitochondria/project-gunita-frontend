@@ -15,10 +15,7 @@ export default function HeroSection() {
 
       <div className="hero-content">
         <img src={LOGO_WHITE} alt="Project Gunita" className="hero-logo" />
-        <h1 className="hero-tagline">{heroData.tagline}</h1>
-        <p className="hero-subtitle">
-          An academic research organization focused on countering historical distortion of Philippine contemporary history.
-        </p>
+        <h1 className="hero-tagline">Defend<br />Historical Truth</h1>
         <div className="hero-cta">
           {heroData.ctaButtons.map((btn) => (
             <a
