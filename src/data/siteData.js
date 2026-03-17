@@ -19,12 +19,6 @@ export const heroData = {
       variant: 'primary',
       external: true,
     },
-    {
-      label: 'Contact Us',
-      href: 'mailto:archives@projectgunita.com',
-      variant: 'outline',
-      external: false,
-    },
   ],
 };
 
