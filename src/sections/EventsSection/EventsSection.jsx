@@ -12,7 +12,7 @@ export default function EventsSection() {
           subtitle="Our latest initiatives in preserving history and promoting truth"
         />
 
-        <div className="events-grid">
+        <div className="events-grid reveal-stagger">
           {events.map((event) => (
             <EventCard key={event.id} event={event} />
           ))}

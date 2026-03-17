@@ -4,23 +4,27 @@
    ============================== */
 
 :root {
-  /* Colors - Dark Theme (default) */
-  --pg-bg: #0a0a0a;
-  --pg-bg-secondary: #141414;
-  --pg-bg-card: #1a1a1a;
-  --pg-text: #e0e0e0;
-  --pg-text-muted: #999;
-  --pg-text-heading: #ffffff;
-  --pg-accent: #c8102e;
-  --pg-accent-hover: #e01535;
-  --pg-border: #2a2a2a;
-  --pg-shadow: rgba(0, 0, 0, 0.4);
-  --pg-overlay: rgba(0, 0, 0, 0.7);
-  --pg-card-hover-shadow: rgba(200, 16, 46, 0.15);
+  /* Colors - Dark Theme (aged ink / newspaper at night) */
+  --pg-bg: #0e0b08;
+  --pg-bg-secondary: #151008;
+  --pg-bg-card: #1c1610;
+  --pg-text: #d4c5a9;
+  --pg-text-muted: #9a8870;
+  --pg-text-heading: #eddfc4;
+  --pg-accent: #a8200d;
+  --pg-accent-hover: #c42912;
+  --pg-border: #2e2318;
+  --pg-shadow: rgba(0, 0, 0, 0.5);
+  --pg-overlay: rgba(10, 7, 4, 0.75);
+  --pg-card-hover-shadow: rgba(168, 32, 13, 0.25);
 
   /* Typography */
-  --pg-font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
-  --pg-font-heading: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --pg-font-sans: 'EB Garamond', 'Garamond', Georgia, 'Times New Roman', serif;
+  --pg-font-heading: 'Playfair Display', Georgia, 'Times New Roman', serif;
+
+  /* Bootstrap font overrides */
+  --bs-body-font-family: var(--pg-font-sans);
+  --bs-font-sans-serif: var(--pg-font-sans);
 
   /* Transitions */
   --pg-transition: 0.3s ease;
@@ -34,20 +38,20 @@
   --pg-navbar-height: 72px;
 }
 
-/* Light Theme Overrides */
+/* Light Theme Overrides (parchment / aged document) */
 [data-bs-theme='light'] {
-  --pg-bg: #ffffff;
-  --pg-bg-secondary: #f8f9fa;
-  --pg-bg-card: #ffffff;
-  --pg-text: #333333;
-  --pg-text-muted: #666666;
-  --pg-text-heading: #111111;
-  --pg-accent: #c8102e;
-  --pg-accent-hover: #a00d24;
-  --pg-border: #dee2e6;
-  --pg-shadow: rgba(0, 0, 0, 0.1);
-  --pg-overlay: rgba(0, 0, 0, 0.5);
-  --pg-card-hover-shadow: rgba(200, 16, 46, 0.1);
+  --pg-bg: #f4ecdc;
+  --pg-bg-secondary: #ede3ce;
+  --pg-bg-card: #faf3e4;
+  --pg-text: #3a2519;
+  --pg-text-muted: #7a6240;
+  --pg-text-heading: #1e0d06;
+  --pg-accent: #8b1a0c;
+  --pg-accent-hover: #a8200d;
+  --pg-border: #c8b090;
+  --pg-shadow: rgba(60, 30, 10, 0.18);
+  --pg-overlay: rgba(20, 10, 4, 0.55);
+  --pg-card-hover-shadow: rgba(139, 26, 12, 0.18);
 }
 
 /* ==============================
@@ -67,9 +71,10 @@ body {
   margin: 0;
   padding: 0;
   font-family: var(--pg-font-sans);
+  font-size: 1.1rem;
   background-color: var(--pg-bg);
   color: var(--pg-text);
-  line-height: 1.6;
+  line-height: 1.75;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   transition: background-color var(--pg-transition), color var(--pg-transition);
@@ -81,6 +86,7 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--pg-text-heading);
   font-weight: 700;
   line-height: 1.2;
+  letter-spacing: 0.01em;
   margin-bottom: 1rem;
 }
 
@@ -156,7 +162,7 @@ img {
   border-color: var(--pg-accent-hover);
   color: #ffffff;
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(200, 16, 46, 0.3);
+  box-shadow: 0 6px 20px var(--pg-card-hover-shadow);
 }
 
 .btn-pg-outline {
@@ -195,4 +201,47 @@ img {
   h1 { font-size: 2rem; }
   h2 { font-size: 1.5rem; }
   h3 { font-size: 1.25rem; }
+}
+
+/* ==============================
+   Scroll Reveal Animations
+   ============================== */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.65s ease, transform 0.65s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Staggered grid/list children */
+.reveal-stagger > * {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.65s ease, transform 0.65s ease;
+}
+.reveal-stagger.visible > *:nth-child(1) { transition-delay: 0.05s; }
+.reveal-stagger.visible > *:nth-child(2) { transition-delay: 0.15s; }
+.reveal-stagger.visible > *:nth-child(3) { transition-delay: 0.25s; }
+.reveal-stagger.visible > *:nth-child(4) { transition-delay: 0.35s; }
+.reveal-stagger.visible > *:nth-child(5) { transition-delay: 0.45s; }
+.reveal-stagger.visible > *:nth-child(6) { transition-delay: 0.55s; }
+.reveal-stagger.visible > *:nth-child(7) { transition-delay: 0.65s; }
+.reveal-stagger.visible > *:nth-child(8) { transition-delay: 0.70s; }
+.reveal-stagger.visible > * {
+  opacity: 1;
+  transform: none;
+}
+
+/* Respect user motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .reveal-stagger > * {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
 }

@@ -31,14 +31,6 @@ export default function Footer() {
           ))}
         </div>
 
-        <div className="pg-footer-links">
-          {footerData.links.map((link) => (
-            <a key={link.label} href={link.href}>
-              {link.label}
-            </a>
-          ))}
-        </div>
-
         <p className="pg-footer-copyright">{footerData.copyright}</p>
       </div>
     </footer>

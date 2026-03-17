@@ -38,7 +38,7 @@
   letter-spacing: 1px;
   margin-bottom: 0.75rem;
   padding: 0.25rem 0.75rem;
-  background-color: rgba(200, 16, 46, 0.1);
+  background-color: var(--pg-card-hover-shadow);
   border-radius: 4px;
 }
 
@@ -54,5 +54,22 @@
   font-size: 0.9rem;
   color: var(--pg-text-muted);
   line-height: 1.6;
-  margin: 0;
+  margin: 0 0 1.25rem;
+}
+
+.event-card-icymi {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--pg-accent);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: gap var(--pg-transition), opacity var(--pg-transition);
+}
+.event-card-icymi:hover {
+  opacity: 0.8;
+  gap: 0.65rem;
 }

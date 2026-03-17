@@ -41,21 +41,6 @@
   transform: translateY(-3px);
 }
 
-.pg-footer-links {
-  display: flex;
-  gap: 1.5rem;
-  justify-content: center;
-  margin-bottom: 1rem;
-}
-.pg-footer-links a {
-  color: var(--pg-text-muted);
-  font-size: 0.85rem;
-  transition: color var(--pg-transition);
-}
-.pg-footer-links a:hover {
-  color: var(--pg-accent);
-}
-
 .pg-footer-copyright {
   text-align: center;
   color: var(--pg-text-muted);

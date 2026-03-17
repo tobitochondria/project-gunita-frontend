@@ -5,28 +5,16 @@ export default function ContactSection() {
   return (
     <section id="contact" className="pg-section contact-section">
       <div className="container">
-        <h2 className="contact-heading">{contactData.heading}</h2>
+        <h2 className="contact-heading reveal">{contactData.heading}</h2>
 
-        <div className="contact-info">
-          <div className="mb-4">
-            <a
-              href={`mailto:${contactData.email}`}
-              className="contact-email"
-            >
-              <i className="bi bi-envelope-fill"></i>
-              {contactData.email}
-            </a>
-          </div>
-
+        <div className="contact-info reveal">
           <p className="contact-partnership">{contactData.partnershipText}</p>
           <a
-            href={contactData.messengerUrl}
-            className="contact-messenger"
-            target="_blank"
-            rel="noopener noreferrer"
+            href={`mailto:${contactData.partnershipEmail}`}
+            className="contact-email"
           >
-            <i className="bi bi-messenger"></i>
-            {contactData.messengerText}
+            <i className="bi bi-envelope-fill"></i>
+            {contactData.partnershipEmail}
           </a>
 
           <h3 className="contact-social-heading">Social Media Pages</h3>

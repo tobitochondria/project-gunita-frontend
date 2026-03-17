@@ -24,7 +24,7 @@ export default function NewsSection() {
           subtitle="Media coverage and features about Project Gunita"
         />
 
-        <div className="news-tabs">
+        <div className="news-tabs reveal">
           {categories.map((cat) => (
             <button
               key={cat}
@@ -36,7 +36,7 @@ export default function NewsSection() {
           ))}
         </div>
 
-        <div className="news-grid">
+        <div className="news-grid reveal-stagger">
           {filtered.map((article) => (
             <NewsCard key={article.id} article={article} />
           ))}

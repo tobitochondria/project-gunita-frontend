@@ -130,86 +130,88 @@ export const archiveCategories = [
     id: 1,
     title: 'Newspapers',
     description: 'Access periodicals that reported—and sometimes resisted—the narratives of the Martial Law era.',
-    icon: 'bi-newspaper',
+    image: '/assets/images/cards/newspapers.svg',
+    link: 'https://drive.google.com/drive/folders/1ach0xu40_bQjsVGk-BVT1lZi9HhTDtvb?usp=drive_link',
   },
   {
     id: 2,
     title: 'Books',
     description: 'Delve into scholarly works and testimonies that dissect the complexities of dictatorship and resistance.',
-    icon: 'bi-book',
+    image: '/assets/images/cards/books.svg',
+    link: 'https://drive.google.com/drive/folders/1StRmet1JIFZOsbXuFFGX0LsxGcYUfliY?usp=drive_link',
   },
   {
     id: 3,
-    title: 'Leaflets, Posters, Etc.',
+    title: 'Ephemera',
     description: 'Explore campaign and protest materials that fueled the struggle for truth and freedom.',
-    icon: 'bi-file-earmark-richtext',
+    image: '/assets/images/cards/ephemera.svg',
+    link: 'https://drive.google.com/drive/folders/1hS2tbDrmlX0VZO-9DqkQeOfJdR2ahPhC?usp=drive_link',
   },
   {
     id: 4,
     title: 'Official Reports',
     description: 'Review critical investigations and government records that document abuses and accountability efforts.',
-    icon: 'bi-file-earmark-text',
+    image: '/assets/images/cards/reports.svg',
+    link: 'https://drive.google.com/drive/folders/1Br6C-c27S5uT1412mLGD7VJOJwPh4Ekl?usp=drive_link',
   },
   {
     id: 5,
-    title: 'Retrieved Collections',
+    title: 'Collections',
     description: 'Uncover rare and salvaged materials donated by private individuals that preserve the memories often erased from official history.',
-    icon: 'bi-archive',
+    image: '/assets/images/cards/collections.svg',
+    link: 'https://drive.google.com/drive/folders/12c-7TfLSFGSyXzu3MB2kMw-EVIHjh3xS?usp=drive_link',
   },
   {
     id: 6,
     title: 'Documentaries',
     description: 'Experience powerful visual accounts capturing the voices, events, and legacies of Martial Law.',
-    icon: 'bi-camera-reels',
+    image: '/assets/images/cards/documentaries.svg',
+    link: 'https://drive.google.com/drive/folders/1sG8EE8i2-LkfhVKh1waf_ABhwXKR_zk2?usp=drive_link',
   },
 ];
 
 export const events = [
   {
-    id: 1,
-    title: 'Cross-Border Sharing Session from Martial Law Survivors in the Philippines and Taiwan',
-    description: 'A hybrid event held simultaneously in the Philippines and Taiwan where martial law survivors from both countries shared their experiences.',
-    date: '09.20.2024',
-  },
-  {
     id: 2,
     title: 'Alipato at Muog Blockscreening with Talkback',
     description: 'A special screening for the movie-documentary Alipato at Muog in Iloilo City with special talk back from its Director JL Burgos and local victims of enforced disappearances.',
     date: '11.30.2024',
+    link: 'https://www.facebook.com/projectgunita/posts/pfbid0F1yK4MYPnvySJcWB9RK7G29zK1ZAh2SgwvRNqSjnhPyW6r1XqVGzGAkJiRqvsF75l',
   },
   {
     id: 3,
     title: 'Martial Law History Lectures and Archive Exhibit',
     description: 'Educational discussions on Martial Law history and its lasting impact, coupled with a short exhibit of archival collection of Project Gunita.',
     date: '03.09.2025',
+    link: 'https://www.facebook.com/projectgunita/posts/pfbid02WuSiVkuXhyvCg7J3yJLyjpUm3QLAJ1HtU1eqPECSinUNbGuFU4eEKTE12vFYAUzul',
   },
   {
     id: 4,
     title: 'Writing for Justice and Human Rights',
     description: 'Human rights research writing workshop at the FEU Institute of Law, in partnership with FEU-ILSC, FELR, and Bulatlat.',
     date: '09.20.2025',
+    link: 'https://www.facebook.com/projectgunita/posts/pfbid028jwbwUR3pRcAQyA7nbSPECHLX2DxGUuZN4efq8gLgBtZWkyiBHviK9vzzJZzpWFEl',
   },
 ];
 
 export const socialLinks = [
   { platform: 'Facebook', url: 'https://www.facebook.com/projectgunita', icon: 'bi-facebook' },
+  { platform: 'Messenger Channel', url: 'https://www.messenger.com/channel/projectgunita', icon: 'bi-messenger' },
   { platform: 'Twitter / X', url: 'https://x.com/projectgunita', icon: 'bi-twitter-x' },
   { platform: 'Instagram', url: 'https://www.instagram.com/projectgunita', icon: 'bi-instagram' },
   { platform: 'TikTok', url: 'https://www.tiktok.com/@projectgunita', icon: 'bi-tiktok' },
+  { platform: 'Bluesky', url: 'https://bsky.app/profile/projectgunita.com', icon: 'bi-bluesky' },
+  { platform: 'Spotify', url: 'https://open.spotify.com/show/6Y1lRb72zWUSj7QciXsrUL', icon: 'bi-spotify' },
+  { platform: 'YouTube', url: 'https://www.youtube.com/@projectgunita', icon: 'bi-youtube' },
 ];
 
 export const contactData = {
   heading: "Let's work together to counter historical distortion.",
   email: 'archives@projectgunita.com',
   partnershipText: 'For Partnerships and Collaborations:',
-  messengerText: 'Join our Messenger Channel here.',
-  messengerUrl: '#',
+  partnershipEmail: 'archives@projectgunita.com',
 };
 
 export const footerData = {
   copyright: `© ${new Date().getFullYear()} Project Gunita. All rights reserved.`,
-  links: [
-    { label: 'Terms & Support', href: '#' },
-    { label: 'Privacy Policy', href: '#' },
-  ],
 };
