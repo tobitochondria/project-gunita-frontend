@@ -4,8 +4,8 @@
 export const navLinks = [
   { label: 'Home', to: 'hero' },
   { label: 'About', to: 'about' },
-  { label: 'News', to: 'news' },
   { label: 'Archives', to: 'archives' },
+  { label: 'News', to: 'news' },
   { label: 'Events', to: 'events' },
   { label: 'Contact', to: 'contact' },
 ];
